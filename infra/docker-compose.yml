@@ -1,0 +1,23 @@
+version: '3.3'
+services:
+  backend:
+    build: ../drive/
+    restart: always
+    volumes:
+      - static_value:/app/static/
+      
+    env_file:
+      - /root/google_drive_api/.env 
+  nginx:
+    image: nginx:1.19.3
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ../docs/:/usr/share/nginx/html/api/docs/
+      - static_value:/var/html/static/
+    depends_on:
+      - backend
+
+volumes:
+  static_value:
