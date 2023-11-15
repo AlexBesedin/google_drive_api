@@ -39,7 +39,7 @@ sudo docker-compose exec backend python manage.py migrate
 Чтобы создать новый документ в Google Drive с помощью нашего API, отправьте POST запрос на следующий URL:
 
 ```sh
-POST /create-document/
+POST http://94.131.100.195/create-document/
 
 ```
 Тело запроса:
