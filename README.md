@@ -2,7 +2,6 @@
 
 Приложение, которое позволяет создавать документы в Google Drive с помощью POST-запроса.
 
-API Документация: http://94.131.100.195/api/docs/
 
 # Создать Google Cloud Project и настроить Google Drive API:
 
@@ -58,7 +57,10 @@ POST /create-document/
     "link": "https://docs.google.com/document/d/1RKfMICOhf70s4SiTXP7hKnAqVjX0v7DTqIuFkZpYfJ4"
 }
 ```
-
+## API Документация: 
+```sh
+http://ip_adr/api/docs/
+```
 АВТОР: 
 
 [Беседин Алексей](https://github.com/AlexBesedin)
