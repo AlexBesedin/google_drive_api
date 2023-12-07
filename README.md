@@ -62,7 +62,5 @@ POST /create-document/
 http://ip_adr/api/docs/
 ```
 АВТОР: 
-
-[Беседин Алексей](https://github.com/AlexBesedin)
-
-TG: @beszedin
+- [Беседин Алексей](https://github.com/AlexBesedin)
+- TG: @beszedin
